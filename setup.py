@@ -1,4 +1,4 @@
-# -*- coding: utf8 -*-
+
 
 try:
     from setuptools.core import setup
