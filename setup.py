@@ -1,5 +1,4 @@
 
-
 try:
     from setuptools.core import setup
     setup
@@ -12,7 +11,7 @@ setup (
        version = '1.0',
        author = 'Jorge Quiterio',
        author_mail = 'jquiterio00@gmail.com',
-       packages = ['ukpc'],
+       py_modules = ['ukpostalcode'],
        description = 'UK Post Code Format and Validation',
        url = 'http://guithub.com/jquiterio/ukpc',
        license = open('LICENSE').read(),
