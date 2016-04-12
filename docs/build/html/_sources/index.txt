@@ -9,25 +9,35 @@ Welcome to UK Postal Code and Validation's documentation!
 .. toctree::
    :maxdepth: 2
 
-Quickstart Usage::
+Quickstart Usage:
 
-    from ukpc import postalcode
+INSTALL:: 
+    
+    pip3 install https://github.com/jquiterio/ukpc.git
+
+or unzip https://github.com/jquiterio/ukpc/archive/master.zip
+
+if unziped::
+   
+    cd /path/to/unziped/foleder/
+    python3
+    >>>import ukpostalcode
 
 VALIDATION::
 
-    postalcode.isvalid("OX1 2JD")
+    ukpostalcode.isvalid("OX1 2JD")
     
     >>>True
 
 FORMAT::
 
-    postalcode.format_postalcode("OX12JD")
+    ukpostalcode.format_postalcode("OX12JD")
     
     >>>'OX1 2JD'
 
 or::
 
-    postalcode.format_postalcode("O X 12J D")
+    ukpostalcode.format_postalcode("O X 12J D")
     
     >>>'OX1 2JD'
 

@@ -9,7 +9,7 @@ Welcome to UK Postal Code and Validation's documentation!
 .. toctree::
    :maxdepth: 2
 
-Quickstart Usage:
+Quickstart Usage::
 
 INSTALL:: 
     
@@ -19,9 +19,9 @@ or unzip https://github.com/jquiterio/ukpc/archive/master.zip
 
 if unziped::
    
-    cd /path/to/unziped/foleder/
-    python3
-    >>>import ukpostalcode
+   cd /path/to/unziped/foleder/
+   python3
+   >>>import ukpostalcode
 
 VALIDATION::
 
