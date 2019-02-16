@@ -1,11 +1,16 @@
 import re
+import urllib.request, json 
 
 
 __newpc = ""
 
+def _get_from_url(url):
+    res = ''
+    with urllib.request.urlopen(url) as d:
+        res = json.loads(d.read().decode())
+    return res
+
 def isValid(pc):
-    
-    
     """
     @return True or False
     isvalid Function match given postal code 'pc' using REGEX pattern
@@ -68,12 +73,24 @@ def isValid(pc):
 
 def format_postcode(pc):
     """
-    @return postal code or nothing
+    @return postal code or None
     format_postcode function calls isValid() function and return changed global __newpc
     (by valid function). If postalcode is Wrong a exception in isValid is called. 
     """
     if isValid(pc):
         return __newpc
     else:
-        return "Postal Code is not Valid!"  
-            
+        return None
+
+def detailed(pc):
+    """
+    @return json
+    validate, format(if needed) and then get from http://api.getthedata.com/postcode/
+    """
+    d = format_postcode(pc)
+    if d:
+        res = _get_from_url('http://api.getthedata.com/postcode/%s'%(d.replace(' ', '+')) )
+    else:
+        res = None
+    return res
+
