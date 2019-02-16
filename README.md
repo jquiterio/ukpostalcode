@@ -6,7 +6,7 @@ regex from https://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom
 
 INSTALL:
 
-$ pip install https://git.jquiterio.eu/jquiterio/ukpostalcode.git
+$ pip install ukpostalcode
 >>>import ukpostalcode as ukpc
 
 
