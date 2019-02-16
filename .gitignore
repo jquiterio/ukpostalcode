@@ -1,5 +1,5 @@
 __pycache__
 .settings
-*.egg.info/*
+ukpostalcode.egg.info/*
 build/*
 dist/*
