@@ -1,5 +1,5 @@
 import unittest
-from . import ukpostalcode as ukpc
+import ukpostalcode as ukpc
 
 class ukpc_test(unittest.TestCase):
   def __init__(self):
