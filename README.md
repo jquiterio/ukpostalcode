@@ -13,27 +13,27 @@ $ pip install ukpostalcode
 
 ### Validation
 
-```pc.isValid("OX1 2JD")```
+```pc.isValid()```
 
 return bool `True` if is valid else `False`
 
 
 ### Format
 
-```pc.format("OX12JD")```
+```pc.format()```
 
 or
 
-```pc.format("O X 12J D")```
+```pc.format()```
 
 or wathever the disposition of characters
 
-return `string` `'OX1 2JD'` it will first validate with `isvalid`
+return `string` `'OX1 2JD'` if `isValid`
 
 
 ### Getting more details (json)
 
-```pc.details('OX1 2JD')```
+```pc.details()```
 
 this will get information from http://api.getthedata.com/postcode
 
