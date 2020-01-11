@@ -3,3 +3,4 @@ __pycache__
 ukpostalcode.egg.info/*
 build/*
 dist/*
+*.pyc
