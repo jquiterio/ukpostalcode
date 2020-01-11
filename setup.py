@@ -8,12 +8,12 @@ except ImportError:
 
 setup(
     name='ukpostalcode',
-    version=1.2,
+    version=1.3,
     author='Jorge Quiterio',
     author_mail='eu@jquiterio.eu',
     py_modules=['ukpostalcode'],
-    description='UK Post Code Format and Validation',
-    url='https://git.jquiterio.eu/jquiterio/ukpostalcode',
+    description='UK postal code format, validation and details',
+    url='https://pypi.org/project/ukpostalcode',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',

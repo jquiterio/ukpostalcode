@@ -1,36 +1,39 @@
-Quickstart Usage:
+# ukpostalcode
 
-UK Postalcode format and validation.
-regex from https://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom
-
-
-INSTALL:
+## Install:
 
 $ pip install ukpostalcode
->>>import ukpostalcode as ukpc
+
+## Usage:
+
+```import ukpostalcode as ukpc```
+
+```pc = ukpc.ukpc("OX12JD")```
 
 
-VALIDATION
+### Validation
 
-`>>>ukpc.isvalid("OX1 2JD")
->>>True`
+```pc.isValid("OX1 2JD")```
 
-
-FORMAT
-
-`>>>ukpc.format_postalcode("OX12JD")
->>>'OX1 2JD'`
+return bool `True` if is valid else `False`
 
 
-or:
+### Format
+
+```pc.format("OX12JD")```
+
+or
+
+```pc.format("O X 12J D")```
+
+or wathever the disposition of characters
+
+return `string` `'OX1 2JD'` it will first validate with `isvalid`
 
 
-`>>>ukpc.format_postalcode("O X 12J D")
->>>'OX1 2JD'`
+### Getting more details (json)
 
-GETTING MORE DETAILS(json)
-
->>>ukpc.detailed('OX1 2JD')
+```pc.details('OX1 2JD')```
 
 this will get information from http://api.getthedata.com/postcode
 
